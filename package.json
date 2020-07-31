@@ -1,0 +1,23 @@
+{
+  "name": "json-to-excel",
+  "version": "1.0.0",
+  "description": "An opensource project in development to convert json to excel",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aimanafzal/json-to-excel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aimanafzal/json-to-excel/issues"
+  },
+  "homepage": "https://github.com/aimanafzal/json-to-excel#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
