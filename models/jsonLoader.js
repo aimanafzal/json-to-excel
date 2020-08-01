@@ -9,9 +9,13 @@ module.exports = class jsonLoader {
         console.log(`Load method activated!`)
         let jsonKeys = _.keys(json)
         let wb = new xl.Workbook()
-        // let wb = xl.Workbook()
         let ws = wb.addWorksheet('Sheet 1')
         let style = this.loadStyle(wb)
+        for (let index = 0; index <= jsonKeys.length; index++) {
+            console.log(jsonKeys[index])
+            ws.cell(1, index).string(jsonKeys[index])
+        }
+        
         wb.write('Excel.xlsx');
     }
 
@@ -27,4 +31,3 @@ module.exports = class jsonLoader {
 
 
 }
-// module.exports =  jsonLoader 
