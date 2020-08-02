@@ -13,7 +13,7 @@ module.exports = class jsonLoader {
         let style = this.loadStyle(wb)
         for (let index = 0; index <= jsonKeys.length; index++) {
             console.log(jsonKeys[index])
-            ws.cell(1, index).string(jsonKeys[index])
+            ws.cell(1, index + 1).string(jsonKeys[index])
         }
         
         wb.write('Excel.xlsx');
